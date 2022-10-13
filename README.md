@@ -91,3 +91,24 @@ docker images
 docker tag <source image> tshapelabacr01.azurecr.io/<target image>:<tag>
 docker push tshapelabacr01.azurecr.io/<target image>:<tag>
 ```
+
+## Lab
+
+We've run containers using public and custom images. All public packages available on [Docker Hub](https://hub.docker.com).
+
+In this lab you'll work with Java containers:
+
+- find a package on Docker Hub which you can use to run a Java app
+- run a Java container and confirm which version of Java is installed using the `java -version` command
+- now find a *small* image for Java 8, with just the JRE runtime installed
+
+> Stuck? Try [hints](hints.md) or check the [solution](solution.md).
+
+___
+## Cleanup
+
+Cleanup by removing all containers:
+
+```
+docker rm -f $(docker ps -aq)
+```
