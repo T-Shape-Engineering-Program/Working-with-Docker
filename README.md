@@ -48,3 +48,22 @@ docker run -d -P --name nginx1 nginx:alpine
 -p publishes network ports so you can send traffic into the container
 
 --name gives the container a name so you can work with it in other commands
+
+## Running custom containers on a Single Machine
+
+### Create a new .Net Core Web API
+```
+dotnet new webapi -o HelloCode.API
+```
+
+### Test run the web api
+```
+Run the web api using the Run and Debug section of VS Code or using "dotnet run" command
+```
+
+### Add Docker support
+```
+* Add a Dockerfile using the command palette of VS Code (CMD+SHFT+P)
+* Run HelloCode.API using command palette or using the "docker run" command
+* Inspect the container image and container using Docker Extention and Docker Desktop
+```
