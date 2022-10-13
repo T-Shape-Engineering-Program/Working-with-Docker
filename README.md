@@ -43,6 +43,8 @@ You'll use background containers for web servers, batch processes, databases mes
 ```
 docker run -d -P --name nginx1 nginx:alpine
 ```
-the -d flag runs a detached background container
+-d flag runs a detached background container
+
 -p publishes network ports so you can send traffic into the container
+
 --name gives the container a name so you can work with it in other commands
