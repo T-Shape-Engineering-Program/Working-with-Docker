@@ -32,7 +32,10 @@ exit
 ```
 docker run --rm -it -p 3000:80 -p 2525:25 rnwood/smtp4dev
 ```
-
+### Try another one
+```
+docker run -it --rm -p 8000:80 --name aspnetcore_sample mcr.microsoft.com/dotnet/samples:aspnetapp
+```
 
 ## Running a background container
 
@@ -53,7 +56,7 @@ docker run -d -P --name nginx1 nginx:alpine
 
 ### Create a new .Net Core Web API
 ```
-dotnet new webapi -o HelloCode.API
+dotnet new webapi -o HelloCode.API --no-https
 ```
 
 ### Test run the web api
@@ -66,4 +69,25 @@ Run the web api using the Run and Debug section of VS Code or using "dotnet run"
 * Add a Dockerfile using the command palette of VS Code (CMD+SHFT+P)
 * Run HelloCode.API using command palette or using the "docker run" command
 * Inspect the container image and container using Docker Extention and Docker Desktop
+```
+
+## Working with container registries
+
+## Retag and push to Docker Hub:
+```
+docker login <username>
+Password: <password>
+docker images
+docker tag <source image> <username>/<target image>:<tag>
+docker push <username>/<target image>:<tag>
+```
+
+## Retag and push to ACR:
+```
+docker login tshapelabacr01.azurecr.io
+Username: tshapelabacr01
+Password: <password>
+docker images
+docker tag <source image> tshapelabacr01.azurecr.io/<target image>:<tag>
+docker push tshapelabacr01.azurecr.io/<target image>:<tag>
 ```
