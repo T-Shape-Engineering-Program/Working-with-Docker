@@ -34,7 +34,7 @@ docker run --rm -it -p 3000:80 -p 2525:25 rnwood/smtp4dev
 ```
 
 
-### Running a background container
+## Running a background container
 
 Interactive containers are great for testing commands and exploring the container setup, but mostly you'll want to run detached containers.
 These run in the background, so the container keeps running until the application process exits, or you stop the container.
