@@ -73,7 +73,7 @@ Run the web api using the Run and Debug section of VS Code or using "dotnet run"
 
 ## Working with container registries
 
-## Retag and push to Docker Hub:
+### Retag and push to Docker Hub:
 ```
 docker login <username>
 Password: <password>
@@ -82,7 +82,7 @@ docker tag <source image> <username>/<target image>:<tag>
 docker push <username>/<target image>:<tag>
 ```
 
-## Retag and push to ACR:
+### Retag and push to ACR:
 ```
 docker login tshapelabacr01.azurecr.io
 Username: tshapelabacr01
