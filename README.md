@@ -86,7 +86,7 @@ docker push <username>/<target image>:<tag>
 ```
 docker login tshapelabacr01.azurecr.io
 Username: tshapelabacr01
-Password: <password>
+Password: zd+sexKFPEK5g9DHcGPzIctuwLJ39Iej
 docker images
 docker tag <source image> tshapelabacr01.azurecr.io/<target image>:<tag>
 docker push tshapelabacr01.azurecr.io/<target image>:<tag>
